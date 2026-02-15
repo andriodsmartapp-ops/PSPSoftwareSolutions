@@ -4,6 +4,8 @@ import { FaRobot, FaUserCircle } from "react-icons/fa";
 export default function Navbar() {
   const links = [
     { label: "Home", id: "home" },
+
+    {label: "About Us", id: "aboutus"},
     { label: "Services", id: "services" },
     { label: "AI", id: "ai" },
     { label: "Contact", id: "contact" },

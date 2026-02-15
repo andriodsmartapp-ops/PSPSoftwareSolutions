@@ -5,15 +5,23 @@ import AISolutions from "./components/AISolutions";
 import Contact from "./components/Contact";
 import ChatBot from "./components/ChatBot";
 
+import AboutUs  from "./components/AboutUs";
+
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <Hero />
+      { <Navbar /> }
       <CoreServices />
+      <Hero />
+      
       <AISolutions />
       <Contact />
+
+      <AboutUs/>
       <ChatBot />
+      <Footer/>
     </div>
   );
 }

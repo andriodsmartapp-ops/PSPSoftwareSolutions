@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background: radial-gradient(circle at top left, #1f2aff, #090c24);
   color: white;
   overflow-x: hidden;
@@ -46,13 +46,13 @@ body {
   box-shadow: 0 0 18px rgba(0, 170, 255, 0.35);
 }
 
-.hero {
+/* .hero {
   display: flex;
   justify-content: center;
   padding: 80px 20px;
   position: relative;
   overflow: hidden;
-}
+} */
 
 /* Simple starfield animation without external images */
 .hero::before,
@@ -61,11 +61,31 @@ body {
   position: absolute;
   inset: -20%;
   background-image:
-    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.95) 0 1px, transparent 2px),
-    radial-gradient(circle at 80% 40%, rgba(255,255,255,0.75) 0 1px, transparent 2px),
-    radial-gradient(circle at 35% 75%, rgba(255,255,255,0.65) 0 1px, transparent 2px),
-    radial-gradient(circle at 60% 20%, rgba(255,255,255,0.55) 0 1px, transparent 2px),
-    radial-gradient(circle at 10% 90%, rgba(255,255,255,0.6) 0 1px, transparent 2px);
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(255, 255, 255, 0.95) 0 1px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 80% 40%,
+      rgba(255, 255, 255, 0.75) 0 1px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 35% 75%,
+      rgba(255, 255, 255, 0.65) 0 1px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 60% 20%,
+      rgba(255, 255, 255, 0.55) 0 1px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 10% 90%,
+      rgba(255, 255, 255, 0.6) 0 1px,
+      transparent 2px
+    );
   background-size: 260px 260px;
   opacity: 0.35;
   transform: translateZ(0);
@@ -80,17 +100,21 @@ body {
 }
 
 @keyframes drift {
-  from { transform: translate3d(0,0,0); }
-  to   { transform: translate3d(-8%, 6%, 0); }
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-8%, 6%, 0);
+  }
 }
 
 .hero-card {
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(25px);
   padding: 50px;
   border-radius: 25px;
   text-align: center;
-  box-shadow: 0 0 60px rgba(0,150,255,0.6);
+  box-shadow: 0 0 60px rgba(0, 150, 255, 0.6);
   position: relative;
   z-index: 2;
 }
@@ -108,21 +132,41 @@ body {
   height: 220px;
   border-radius: 999px;
   filter: blur(2px);
-  background: radial-gradient(circle at 30% 30%, rgba(0,170,255,0.7), rgba(111,0,255,0.18) 60%, transparent 70%);
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(0, 170, 255, 0.7),
+    rgba(111, 0, 255, 0.18) 60%,
+    transparent 70%
+  );
   box-shadow: 0 0 60px rgba(0, 170, 255, 0.35);
   z-index: 1;
   pointer-events: none;
 }
 
-.orb-1 { left: 8%; top: 20%; }
-.orb-2 { right: 10%; top: 10%; width: 280px; height: 280px; opacity: 0.85; }
-.orb-3 { right: 18%; bottom: 8%; width: 180px; height: 180px; opacity: 0.7; }
+.orb-1 {
+  left: 8%;
+  top: 20%;
+}
+.orb-2 {
+  right: 10%;
+  top: 10%;
+  width: 280px;
+  height: 280px;
+  opacity: 0.85;
+}
+.orb-3 {
+  right: 18%;
+  bottom: 8%;
+  width: 180px;
+  height: 180px;
+  opacity: 0.7;
+}
 
 .features span {
   margin: 10px;
   padding: 10px 18px;
   border-radius: 12px;
-  background: rgba(0,150,255,0.2);
+  background: rgba(0, 150, 255, 0.2);
   box-shadow: 0 0 15px #00aaff;
 }
 
@@ -141,12 +185,12 @@ body {
 
 .service-card,
 .ai-card {
-  background: rgba(255,255,255,0.07);
+  background: rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(20px);
   padding: 30px;
   border-radius: 18px;
   min-width: 220px;
-  box-shadow: 0 0 30px rgba(0,150,255,0.4);
+  box-shadow: 0 0 30px rgba(0, 150, 255, 0.4);
   transition: 0.4s;
 }
 
@@ -168,7 +212,7 @@ body {
   padding: 12px;
   border-radius: 10px;
   border: none;
-  background: linear-gradient(45deg,#00aaff,#6f00ff);
+  background: linear-gradient(45deg, #00aaff, #6f00ff);
   color: white;
   cursor: pointer;
   box-shadow: 0 0 20px #00aaff;
@@ -179,11 +223,11 @@ body {
   bottom: 20px;
   right: 20px;
   width: 280px;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   color: black;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
 }
 
 .chat-header {
@@ -201,4 +245,117 @@ body {
   display: flex;
   gap: 6px;
   margin-top: 10px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(circle at top left, #0f172a, #1e3a8a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Star Effect */
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/stardust.png");
+  opacity: 0.3;
+}
+
+/* Main Banner */
+.banner {
+  position: relative;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  box-shadow:
+    0 0 40px rgba(59, 130, 246, 0.6),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+  text-align: center;
+  color: white;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.banner span {
+  color: #60a5fa;
+}
+
+/* Big Icons Row */
+.big-icons {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.icon-block {
+  text-align: center;
+}
+
+.icon-block img {
+  width: 90px;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.6));
+  transition: 0.4s;
+}
+
+.icon-block img:hover {
+  transform: scale(1.1);
+}
+
+.icon-block p {
+  margin-top: 10px;
+  background: #111827;
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+
+/* Corner Floating Elements */
+.corner {
+  position: absolute;
+  width: 80px; /* adjust size */
+  z-index: 20;
+}
+
+.message {
+  top: -35px;
+  left: -35px;
+}
+
+.rocket {
+  bottom: -35px;
+  right: -35px;
+}
+
+.maps {
+  top: -35px;
+  right: -35px;
+}
+
+.aeroplaneenvelop {
+  bottom: -35px;
+  left: -35px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.corner {
+  animation: float 4s ease-in-out infinite;
 }
